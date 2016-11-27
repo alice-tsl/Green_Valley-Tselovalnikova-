@@ -1,0 +1,103 @@
+.offers-switcher{
+  box-sizing: border-box;
+  padding-top: 58px;
+  background-color: #fff;
+  text-align: center;
+  
+  @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+   
+  }
+
+  // Стили для десктопа
+  @media screen and (min-width: @min-desktop){
+    
+  }
+
+  &__container{
+    width: @screen-xs;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  &__title{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-bottom: 33px;
+
+  }
+
+  &__tab{
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  &__tab-item{
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-right: 34px;
+    padding-bottom: 35px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &::before{
+      content: "";
+      position: absolute;
+      height: 12px;
+      width: 12px;
+      border: 2px solid #ff7435;
+      border-radius: 50%;
+    }
+
+    &--active{
+      position: relative;
+
+      &::before{
+      content: "";
+      position: absolute;
+      height: 12px;
+      width: 12px;
+      border: 2px solid #ff7435;
+      background-color: #ff7435;
+      border-radius: 50%;
+      }
+    }
+  }
+
+  &__type{
+    box-sizing: border-box;
+    background-image: url(/img/bkg_offers.jpg);
+    padding-top: 155px;
+    padding-bottom: 22px;
+    padding-right: 20px;
+  }
+
+  &__type-item{
+    box-sizing: border-box;
+    background-color: rgba(255,255,255, 0.9);
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  &__type-title{
+    color: #ff7435;
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 11px;
+  }
+
+  &__type-body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 21px;
+  }
+
+}
