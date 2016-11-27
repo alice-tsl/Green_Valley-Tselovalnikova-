@@ -1,33 +1,139 @@
 .rest-type-switcher{
   box-sizing: border-box;
 
-  @media screen (max-width: 320px){
-    &__container{
-      width: 320px;
+  @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+    padding: 14px 0;
+  }
+
+  // Стили для десктопа
+  @media screen and (min-width: @min-desktop){
+    padding: 14px 0;
+  }
+
+
+  &__container{
+    width: @screen-xs;
+    margin: auto;
+
+    @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+      width: @screen-sm;
     }
 
-    &__type{
-      background-image: url(../img/bkg_forest.jpg);
-      background-position: cover;
-      padding-top: 20px;
-      padding-bottom: 160px;
+    @media screen and (min-width: @min-desktop){
+      width: @screen-lg;
     }
+  }
 
-    &__type-item{
-      box-sizing: border-box;
-      padding: 8px, 10px;
-      background-color: #fbffff;
-    }
+  &__type{
+    width: @screen-xs;
+    background-image: url(../img/bkg_forest.jpg);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-bottom: 160px;
 
-    &__type-title{
-      margin: 0;
-      padding-bottom: 18px;
-      font-size: 18px;
-    }
-
-    &__type-inner p{
-      font-size: 16px;
-    }
+    @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
     
     }
+
+    @media screen and (min-width: @min-desktop){
+    
+    }
+
+    &-item{
+      width: @screen-xs;
+      box-sizing: border-box;
+      padding-top: 18px;
+    }
+
+    &-inner{
+      width: @screen-xs;
+      background-color: rgba(251,255,255,0.9);
+      text-align: center;
+      box-sizing: border-box;
+      padding-top: 9px;
+    }
+
+    &-title{
+      margin: 0;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &-text{
+      margin: 0;
+      padding-bottom: 6px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+  }
+
+  &__tab{
+    padding: 0 20px;
+
+    &-item{
+      display: inline-block;
+
+      &:first-child{
+        padding-left: 0;
+        padding-right: 18px;
+      }
+
+      &:last-child{
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+    }
+
+    &-link{
+      color: @text-color;
+      text-decoration: none;
+
+      &--active{
+        color: orange;
+      }
+    }
+
+      
+  }
+
+  &__options{
+    width: @screen-xs;
+
+    &-item{
+      background-image: url(/img/bkg_sky.jpg);
+
+      box-sizing: border-box;
+      text-align: center;
+      padding: 0;
+      padding-top: 50px;
+      padding-bottom: 90px;
+    }
+
+    &-title{
+      // margin: 0;
+      
+    }
+
+    &-text{
+      margin: 0;
+      padding: 0 32px;
+    }
+
+    &-list {
+      display: none;
+    }
+  }
+
+}
+
+
+#rest-corporate__type {
+  display: none;
+}
+
+#rest-corporate__option {
+  display: none;
 }

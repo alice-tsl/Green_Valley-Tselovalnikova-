@@ -1,20 +1,135 @@
 .page-header{
   background-color: #fff;
   box-sizing: border-box;
+  
+  // Стили для планшета
+  @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+    padding: 14px 0;
+  }
 
-  @media screen (min-width: 320px){
-    &__container{
-      width: 320px;
+  // Стили для десктопа
+  @media screen and (min-width: @min-desktop){
+    padding: 14px 0;
+  }
+
+
+
+  &__container{
+    margin: 0 auto;
+    width: @screen-xs;
+    position: relative;
+
+    @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+      width: @screen-sm;
     }
-    padding: 14px, 88px, 88px, 23px;
-    .main-logo{
-      width: 140px;
+
+    @media screen and (min-width: @min-desktop) {
+      width: @screen-lg;
+    }
+  }
+
+  &__contacts{
+    display: none;
+
+    @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
       display: inline-block;
     }
-    .main-nav__switcher{
-      background-image: url(../img/burger_icon.png);
+
+    @media screen and (min-width: @min-desktop) {
       display: inline-block;
-      padding: 31px, 13px, 31px, 37px;
     }
-    }
+  }
+
 }
+
+.main-logo{
+    width: 140px;
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.main-nav{
+  box-sizing: border-box;
+  display: block;
+  
+
+  &__nav{
+    display: none;
+    position: relative;
+
+    @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+      display: inline-block;
+    }
+
+    @media screen and (min-width: @min-desktop){
+        display: inline-block;
+      }
+  }
+
+  &__list {
+    padding-left: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  &__item {
+    list-style: none;
+    border-bottom: 1px solid grey;
+
+    &:first-child {
+      border-top: 1px solid grey;
+    }
+  }
+
+  &__link {
+    color: @text-color;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+
+    &:hover {
+
+    }
+    
+    &--active {
+
+    }
+  }
+
+  &__switcher{
+    background-image: url(../img/burger_icon.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 29px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+     display: none;
+    }
+  }
+}
+
+.btn--icon-calendar{
+  display: none;
+
+  @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+      display: inline-block;
+    }
+
+  @media screen and (min-width: @min-desktop){
+        display: inline-block;
+  }
+}
+

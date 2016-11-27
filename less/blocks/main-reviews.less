@@ -1,0 +1,112 @@
+.main-reviews{
+  box-sizing: border-box;
+  background-color: #0ab89d;
+  text-align: center;
+  padding-top: 67px;
+  background-image: url(../img/bkg-reviews.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+  @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+   
+  }
+
+  // Стили для десктопа
+  @media screen and (min-width: @min-desktop){
+    
+  }
+
+  &__container{
+    width: @screen-xs;
+    margin: 0 auto;
+
+    @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+
+    }
+
+    @media screen and (min-width: @min-desktop){
+
+    }
+  }
+
+  &__title{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 56px;
+    color: #fff;
+  }
+
+  &__item{
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+  }
+
+  &__image{
+      height: 76px;
+      width: 76px;
+      border: 2px solid #fff;
+      position: absolute;
+      top: -30px;
+      left: 0;
+      right: 0;
+      margin: auto;
+  }
+
+  &__body{
+    box-sizing: border-box;
+    position: static;
+    padding-top: 70px;
+  }
+
+  &__client-name{
+    box-sizing: border-box;
+    
+  }
+
+  &__review{
+    box-sizing: border-box;
+    padding: 12px 49px 24px 47px;
+    margin: 0;
+
+  }
+
+  &__review-date{
+    box-sizing: border-box;
+    display: block;
+    padding-bottom: 30px;
+  }
+
+  &__all{
+    box-sizing: border-box;
+    padding: 10px 27px;
+    display: inline-block;
+    margin: 40px 0;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 20px;
+  }
+
+}
+
+.social-media {
+  display: block;
+  box-sizing: border-box;
+  padding-top: 12px;
+  position: relative;
+  padding-bottom: 12px;
+
+  &::before{
+    content: "";
+    position: absolute;
+    background-image: url(/img/icon_vk.png);
+    background-repeat: no-repeat;
+    height: 12px;
+    width: 22px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+}

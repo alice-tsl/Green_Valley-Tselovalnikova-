@@ -1,0 +1,37 @@
+.main-gallery{
+  box-sizing: border-box;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+   
+  }
+
+  // Стили для десктопа
+  @media screen and (min-width: @min-desktop){
+    
+  }
+
+  &__container{
+    width: @screen-xs;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+      width: @screen-sm;
+    }
+
+    @media screen and (min-width: @min-desktop) {
+      width: @screen-lg;
+    }
+  }
+
+  &__big-photo{
+      width: @screen-xs;
+      background-color: #fff;
+    }
+
+  &__carousel-list{
+    display: none;
+  }
+
+}
