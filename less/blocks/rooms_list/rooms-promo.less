@@ -1,0 +1,54 @@
+.rooms-promo{
+  background-color: #fff;
+  box-sizing: border-box;
+  
+  // Стили для планшета
+  @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+    
+  }
+
+  // Стили для десктопа
+  @media screen and (min-width: @min-desktop){
+    
+  }
+
+
+
+  &__container{
+    margin: 0 auto;
+    width: @screen-xs;
+    background-image: url(/img/bkg_house.jpg);
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 66px;
+
+
+    @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+      width: @screen-sm;
+    }
+
+    @media screen and (min-width: @min-desktop) {
+      width: @screen-lg;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  &__body {
+    display: none;
+
+    @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+      
+    }
+
+    @media screen and (min-width: @min-desktop) {
+      
+    }
+  }
+
+}

@@ -1,0 +1,66 @@
+.rooms-categories{
+  background-color: #fff;
+  box-sizing: border-box;
+  
+  // Стили для планшета
+  @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+    
+  }
+
+  // Стили для десктопа
+  @media screen and (min-width: @min-desktop){
+    
+  }
+
+
+
+  &__container{
+    margin: 0 auto;
+    width: @screen-xs;
+    background-color: #fff;
+    padding-top: 46px;
+    text-align: center;
+
+
+    @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+      width: @screen-sm;
+    }
+
+    @media screen and (min-width: @min-desktop) {
+      width: @screen-lg;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+  }
+
+  &__type {
+    background-color: #fafafa;
+    box-sizing: border-box;
+    padding-top: 38px;
+
+    &-title {
+      margin: 0;
+      box-sizing: border-box;
+      padding-bottom: 10px;
+    }
+
+    &-price {
+      
+      b {
+        color: orange;
+      }
+    }
+
+    &-img {
+      box-sizing: border-box;
+      padding-top: 28px;
+    }
+  }
+
+
+
+}
