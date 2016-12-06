@@ -41,6 +41,12 @@
     background-color: #fafafa;
     box-sizing: border-box;
     padding-top: 38px;
+    margin-bottom: 50px;
+    padding-bottom: 34px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &-title {
       margin: 0;
@@ -51,16 +57,61 @@
     &-price {
       
       b {
-        color: orange;
+        color: #ff7435;
       }
     }
 
     &-img {
       box-sizing: border-box;
       padding-top: 28px;
+      padding-bottom: 40px;
     }
+
+    &-about {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: left;
+      padding-bottom: 40px;
+    }
+    
+  }
+}
+
+.btn {
+
+  &--bg-orange{
+    background-color: #e85715;
+    border-radius: 30px;
   }
 
-
+  &--room-type {
+    display: block;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border: 1px solid transparent;
+    width: 180px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 26px;
+  }
 
 }
+
+.learn_more {
+  display: block;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px dotted #000;
+  width: 82px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+

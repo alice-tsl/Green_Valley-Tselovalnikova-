@@ -1,0 +1,107 @@
+.page-footer{
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 24px;
+
+  // Стили для планшета
+  @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+    
+  }
+
+  // Стили для десктопа
+  @media screen and (min-width: @min-desktop){
+    
+  }
+
+
+
+  &__container{
+    margin: 0 auto;
+    width: @screen-xs;
+    position: relative;
+
+    @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+      width: @screen-sm;
+    }
+
+    @media screen and (min-width: @min-desktop) {
+      width: @screen-lg;
+    }
+  }
+
+  &__address{
+    display: none;
+
+    @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+      display: inline-block;
+    }
+
+    @media screen and (min-width: @min-desktop) {
+      display: inline-block;
+    }
+  }
+
+  &__contacts{
+    display: none;
+
+    @media screen and (min-width: @min-tablet) and (max-width: @max-tablet){
+      display: inline-block;
+    }
+
+    @media screen and (min-width: @min-desktop) {
+      display: inline-block;
+    }
+  }
+
+  &__socials {
+    box-sizing: border-box;
+    text-align: center;
+
+    &-vk {
+      position: relative;
+      box-sizing: border-box;
+      padding-right: 35px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-image: url(/img/icon_vk.png);
+        background-repeat: no-repeat;
+      }
+    }
+
+    &-fb {
+      position: relative;
+      box-sizing: border-box;
+      padding-right: 35px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-image: url(/img/icon_vk.png);
+        background-repeat: no-repeat;
+      }
+    }
+
+    &-in {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-image: url(/img/icon_vk.png);
+        background-repeat: no-repeat;
+      }
+    }
+
+  }
+
+}
+

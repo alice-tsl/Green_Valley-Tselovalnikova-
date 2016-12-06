@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Главная Green Valley</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -17,17 +17,18 @@
     <div class="page-header__container">
 
       <a href="#" class="main-logo">
-        <img class="main-logo__img" src="#" alt="логотип">
+        <img class="main-logo__img" src="/img/logo.png" alt="логотип">
       </a>
 
       <div class="main-nav">
         <nav class="main-nav__nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#"></a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#"></a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#"></a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#"></a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#"></a></li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="rooms.html">Номера</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Отдых</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Коттедж</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Ресторан</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+
           </ul>
         </nav>
         <span class="main-nav__switcher"></span>
@@ -46,37 +47,38 @@
   <main>
 
       <div class="rest-type-switcher">
+        <div class="rest-type-switcher__container">
+
+          <!-- Верхний слайдер в ширину экрана -->
+          <div class="rest-type-switcher__type">
+            <section id="rest-family__type" class="rest-type-switcher__type-item rest-type-switcher__type-item--active">
+              <div class="rest-type-switcher__type-inner">
+                <h1 class="rest-type-switcher__type-title">Семейный отдых на берегу Финского залива</h1>
+                <p class="rest-type-switcher__type-text">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семьей.</p>
+              </div>
+            </section>
+
+            <section id="rest-corporate__type" class="rest-type-switcher__type-item">
+              <div class="rest-type-switcher__type-inner">
+                <h1 class="rest-type-switcher__type-title">Корпоративный отдых</h1>
+                <p class="rest-type-switcher__type-text">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семьей.</p>
+              </div>
+            </section>
+          </div>
 
           <ul class="rest-type-switcher__tab">
-            <li class="rest-type-switcher__tab-item rest-type-switcher__tab-item--active"><a href="#rest-family">Семейный отдых</a></li>
-            <li class="rest-type-switcher__tab-item"><a href="#rest-corporate">Корпоративный</a></li>
+            <li class="rest-type-switcher__tab-item"><a href="#rest-family" class="rest-type-switcher__tab-link rest-type-switcher__tab-link--active">Семейный отдых</a></li>
+            <li class="rest-type-switcher__tab-item"><a href="#rest-corporate" class="rest-type-switcher__tab-link">Корпоративный</a></li>
           </ul>
 
-            <!-- Верхний слайдер в ширину экрана -->
-            <div class="rest-type-switcher__type">
-              <section id="rest-family__type" class="rest-type-switcher__type-item rest-type-switcher__type-item--active">
-                <div class="rest-type-switcher__type-inner">
-                  <h1 class="rest-type-switcher__type-title">Семейный отдых</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, distinctio omnis reprehenderit hic quaerat ducimus repellat sint molestiae veniam quam!</p>
-                </div>
-              </section>
-
-              <section id="rest-corporate__type" class="rest-type-switcher__type-item">
-                <div class="rest-type-switcher__type-inner">
-                  <h1 class="rest-type-switcher__type-title">Семейный отдых</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, distinctio omnis reprehenderit hic quaerat ducimus repellat sint molestiae veniam quam!</p>
-                </div>
-              </section>
-            </div>
+          <!-- блок после переключателя -->
+          <div class="rest-type-switcher__options">
             
-
-            <!-- блок после переключателя -->
-            <div class="rest-type-switcher__options">
 
               <section id="rest-family__option" class="rest-type-switcher__options-item rest-type-switcher__options-item--active">
                 <div class="rest-type-switcher__options-inner">
                   <h1 class="rest-type-switcher__options-title">Здоровый отдых</h1>
-                  <p>Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых!</p>
+                  <p class="rest-type-switcher__options-text">Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых!</p>
                   <ul class="rest-type-switcher__options-list">
                     <li class="rest-type-switcher__options-item">
                       <span class="rest-type-switcher__option-pict" style="background-image: url()"></span>
@@ -114,16 +116,17 @@
                   </ul>
                 </div>
               </section>
+            
+          </div>
 
-            </div>
-
+        </div>
       </div>
-
+      
       <div class="main-gallery">
         <div class="main-gallery__container">
 
           <div class="main-gallery__big-photo">
-            <img src="#" alt="">
+            <img src="/img/image_bad.jpg" alt="">
           </div>
           
           <div class="carousel-left"></div>
@@ -131,20 +134,29 @@
 
             <ul class="main-gallery__carousel-list">
               <li class="main-gallery__carousel-item">
+                <img src="/img/photo_client.jpg" alt="">
+              </li>
+              <li class="main-gallery__carousel-item">
+                <img src="/img/photo_client.jpg" alt="">
+              </li>
+              <li class="main-gallery__carousel-item">
+                <img src="/img/photo_client.jpg" alt="">
+              </li>
+              <li class="main-gallery__carousel-item">
                 <img src="D:/specteh24_Tselovalnikova/img/photo_client.jpg" alt="">
               </li>
-              <li class="main-gallery__carousel-item"><img src="D:/specteh24_Tselovalnikova/img/photo_client.jpg" alt=""></li>
-              <li class="main-gallery__carousel-item"><img src="D:/specteh24_Tselovalnikova/img/photo_client.jpg" alt=""></li>
-              <li class="main-gallery__carousel-item"><img src="D:/specteh24_Tselovalnikova/img/photo_client.jpg" alt=""></li>
-              <li class="main-gallery__carousel-item"><img src="D:/specteh24_Tselovalnikova/img/photo_client.jpg" alt=""></li>
-              <li class="main-gallery__carousel-item"><img src="D:/specteh24_Tselovalnikova/img/photo_client.jpg" alt=""></li>
-              <li class="main-gallery__carousel-item"><img src="D:/specteh24_Tselovalnikova/img/photo_client.jpg" alt=""></li>
-              <li class="main-gallery__carousel-item"><img src="D:/specteh24_Tselovalnikova/img/photo_client.jpg" alt=""></li>
-              <li class="main-gallery__carousel-item"><img src="#" alt=""></li>
-              <li class="main-gallery__carousel-item"><img src="#" alt=""></li>
-              <li class="main-gallery__carousel-item"><img src="#" alt=""></li>
-              <li class="main-gallery__carousel-item"><img src="#" alt=""></li>
-              <li class="main-gallery__carousel-item"><img src="#" alt=""></li>
+              <li class="main-gallery__carousel-item">
+                <img src="D:/specteh24_Tselovalnikova/img/photo_client.jpg" alt="">
+              </li>
+              <li class="main-gallery__carousel-item">
+                <img src="D:/specteh24_Tselovalnikova/img/photo_client.jpg" alt="">
+              </li>
+              <li class="main-gallery__carousel-item">
+                <img src="D:/specteh24_Tselovalnikova/img/photo_client.jpg" alt="">
+              </li>
+              <li class="main-gallery__carousel-item">
+                <img src="D:/specteh24_Tselovalnikova/img/photo_client.jpg" alt="">
+              </li>
             </ul>
 
           </div>
@@ -156,27 +168,21 @@
       <div class="main-reviews">
         <div class="main-reviews__container">
 
-          <div class="main-reviews__item">
-            <div class="main-reviews__img">
-              <img src="#" alt="">
-            </div>
-            <span class="main-reviews__client-name">Екатерина В.</span>
-            <a href="#"></a>
-            <blockquote class="main-reviews__review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum doloremque adipisci molestiae id laboriosam atque maxime quisquam ducimus inventore ea.</blockquote>
-            <span class="main-reviews__review-date">Дата отдыха:<br>12.11.2016-12.11.2016</span>
-          </div>
+          <h1 class="main-reviews__title">Отзывы</h1>
 
           <div class="main-reviews__item">
-            <div class="main-reviews__img">
-              <img src="" alt="">
+            <div class="main-reviews__image">
+              <img src="../img/img-client1.jpg" alt="">
             </div>
-            <span class="main-reviews__client-name">Екатерина В.</span>
-            <a href=""></a>
-            <blockquote class="main-reviews__review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum doloremque adipisci molestiae id laboriosam atque maxime quisquam ducimus inventore ea.</blockquote>
-            <span class="main-reviews__review-date">Дата отдыха:<br>12.11.2016-12.11.2016</span>
+            <div class="main-reviews__body">
+              <span class="main-reviews__client-name">Екатерина В.</span>
+              <a class="social-media" href="https://vk.com/"></a>
+              <blockquote class="main-reviews__review">Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!</blockquote>
+              <span class="main-reviews__review-date">Дата отдыха:<br>12.11.2016-12.11.2016</span>
+            </div>
           </div>
 
-          <div class="main-reviews__item">
+          <!-- <div class="main-reviews__item">
             <div class="main-reviews__img">
               <img src="" alt="">
             </div>
@@ -216,33 +222,36 @@
             <span class="main-reviews__review-date">Дата отдыха:<br>12.11.2016-12.11.2016</span>
           </div>
 
-          <button class="btn main-reviews__all"></button>
+          <div class="main-reviews__item">
+            <div class="main-reviews__img">
+              <img src="" alt="">
+            </div>
+            <span class="main-reviews__client-name">Екатерина В.</span>
+            <a href=""></a>
+            <blockquote class="main-reviews__review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum doloremque adipisci molestiae id laboriosam atque maxime quisquam ducimus inventore ea.</blockquote>
+            <span class="main-reviews__review-date">Дата отдыха:<br>12.11.2016-12.11.2016</span>
+          </div>
+ -->
+          <button class="btn main-reviews__all">Все отзывы</button>
         </div>
       </div>
 
       <div class="offers-switcher">
         <div class="offers-switcher__container">
 
-          <h2 class="offers-switcher__title">Акции и предложения</h2>
+          <h2 class="offers-switcher__title">Акции<br> и предложения</h2>
 
-          <ul class="offers-switcher__tab">
-            <li class="offers-switcher__tab-item--active"><a href="#offers-May"></a></li>
-            <li class="offers-switcher__tab-item"><a href="#offers-December"></a></li>
-          </ul>
+          <div class="offers-switcher__type offers-switcher__type--active">
 
-          <div class="offers-switcher__type--active">
-
-            <div class="offers-switcher__type-img">
-              <img src="#" alt="">
-            </div>
             <div class="offers-switcher__type-item">
               <h3 class="offers-switcher__type-title">Скидки в мае</h3>
-              <p class="offers-switcher__type-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dicta obcaecati, eum quod provident assumenda.</p>
+              <p class="offers-switcher__type-body">Забронируйте номер или коттедж любой категории до 31 июня
+и получите скидку 10% !</p>
             </div>
 
           </div>
 
-          <div class="offers-switcher__type">
+          <!-- <div class="offers-switcher__type">
 
             <div class="offers-switcher__type-img">
               <img src="#" alt="">
@@ -252,7 +261,12 @@
               <p class="offers-switcher__type-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dicta obcaecati, eum quod provident assumenda.</p>
             </div>
 
-          </div>
+          </div> -->
+
+          <ul class="offers-switcher__tab">
+            <li class="offers-switcher__tab-item offers-switcher__tab-item--active"><a href="#offers-May"></a></li>
+            <li class="offers-switcher__tab-item"><a href="#offers-December"></a></li>
+          </ul>
 
         </div>
       </div>
@@ -260,16 +274,18 @@
           <div class="route">
             <div class="route__container">
 
+              <h1 class="route__title">Как до нас добраться</h1>
+
               <div class="route__map">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Lk_tycWsBwPIAteSQsZF3fTxcgxzVuXb&amp;width=1280&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
               </div>
 
               <div class="col-6 route__type">
                 <h3 class="route__type-title">Автобусы</h3>
-                <p class="route__type-item"><b>№211</b>Lorem ipsum dolor sit amet.</p>
-                <p class="route__type-item"><b>№305К</b>Lorem ipsum dolor sit amet.</p>
-                <p class="route__type-item"><b>№680</b>Lorem ipsum dolor sit amet.</p>
-                <p class="route__type-item"><b>№400</b>Lorem ipsum dolor sit amet.</p>
+                <p class="route__type-item"><b>№211</b>от станции метро «Черная речка» до остановки «Санаторий Репино»</p>
+                <p class="route__type-item"><b>№305К</b>от станции метро «Старая деревня»</p>
+                <p class="route__type-item"><b>№680</b>от станции метро «Проспект Просвещения»</p>
+                <p class="route__type-item"><b>№400</b>от станции метро </p>
               </div>
 
               <div class="col-6 route__type">
@@ -283,25 +299,25 @@
           <div class="main-options">
             <div class="main-options__container">
               
-              <h2 class="main-options-title">Где Вы хотите отдохнуть?</h2>
+              <h2 class="main-options__title">Где Вы хотите отдохнуть?</h2>
 
               <div class="main-options__type">
                 <div class="main-options__type-img">
-                  <img src="#" alt="">
+                  <img src="/img/bkg_room1.jpg" alt="">
                 </div>
                 <div class="main-options__type-body">
-                  <h3 class="main-options__type-title"></h3>
-                  <div class="main-options__type-price"></div>
+                  <h3 class="main-options__type-title">В отеле</h3>
+                  <div class="main-options__type-price">от <b>4000</b> руб./сутки</div>
                 </div>
               </div>
 
               <div class="main-options__type">
                 <div class="main-options__type-img">
-                  <img src="#" alt="">
+                  <img src="/img/bkg_room2.jpg" alt="">
                 </div>
                 <div class="main-options__type-body">
-                  <h3 class="main-options__type-title"></h3>
-                  <div class="main-options__type-price"></div>
+                  <h3 class="main-options__type-title">В отеле</h3>
+                  <div class="main-options__type-price">от <b>4000</b> руб./сутки</div>
                 </div>
               </div>
 
@@ -318,13 +334,13 @@
       </div>
 
       <a href="#" class="main-logo">
-        <img src="#" alt="логотип">
+        <img src="/img/logo.png" alt="логотип">
       </a>
 
       <div class="page-footer__socials">
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
+        <a class="page-footer__socials-vk" href="https://vk.com/feed"></a>
+        <a class="page-footer__socials-fb" href="https://vk.com/feed"></a>
+        <a class="page-footer__socials-in" href="https://vk.com/feed"></a>
       </div>
 
       <div class="page-footer__contacts">
